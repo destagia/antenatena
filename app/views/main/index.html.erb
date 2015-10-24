@@ -1,0 +1,8 @@
+<% @matomes.each do |matome| %>
+  <h2><%= matome.name %></h2>
+  <section>
+    <% matome.articles.each do |article| %>
+      <p><a href='<%= article.link %>'><%= article.title %></a></p>
+    <% end %>
+  </section>
+<% end %>
